@@ -31,7 +31,7 @@ p[property=description] {
   hyphens: auto;
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  max-width: 30em;
+  max-width: 45em;
   margin: 1em auto; }
   p[property=description] a {
     color: #4095bf; }
