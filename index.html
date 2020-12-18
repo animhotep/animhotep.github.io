@@ -31,17 +31,27 @@ size="xlarge">
 </div>
 http://test.loc/
 
-2<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112839397-1"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-112839397-1');
-</script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '450099878729180',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v9.0'
+      });
+    };
+  </script>
+
+1<div className="fb-send-to-messenger"
+messenger_app_id="450099878729180"
+page_id="103847628286292"
+data-ref="eyJ0eXBlIjoyLCJ1c2VyX2lkIjo2NzQxMzAwfQ=="
+color="blue" 
+size="xlarge">
+</div>
+http://test.loc/
+
+2<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 </body>
 </html>
