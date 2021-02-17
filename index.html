@@ -16,29 +16,9 @@
 <header>
     <h1>fb test</h1>
 </header>
-<script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId            : '450099878729180',
-        autoLogAppEvents : true,
-        xfbml            : true,
-        version          : 'v9.0'
-      });
-    };
-  </script>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script src="//fbstore.sendpulse.com/loader.js" data-sp-widget-id="dac33ba8-519d-4c33-a604-ee7c80a754ef" async></script>
     
-  
-
-<div class="fb-send-to-messenger"
-        messenger_app_id="450099878729180"
-        ng-class="{'txt-loading': vm.botLoading}"
-        page_id="102516918431254"
-        cta_text="SUBSCRIBE"
-        size="xlarge"
-
-        center_align="true">
-</div>
-
+    <input type="hidden" name="666" class="sp_push_custom_data" value="123">
+    <input type="hidden" name="new_val" class="sp_push_custom_data" value="777">
 </body>
 </html>
