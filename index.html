@@ -22,9 +22,26 @@
 
 <p property="description" class="tinymce"></p>
 
+<button onclick=go()>ok</button>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112839397-1"></script>
 <script>
+    
+function go(){
+  console.log(666)
+  navigator.usb.getDevices().then((devices) => {
+    console.log(`Total devices: ${devices.length}`);
+    devices.forEach((device) => {
+      console.log(
+        `Product name: ${device.productName}, serial number ${device.serialNumber}`,
+      );
+    });
+  });
+
+}
+
+
+
     window.dataLayer = window.dataLayer || [];
     function gtag() {
         dataLayer.push(arguments);
